@@ -13,7 +13,7 @@ public class SfPrincipiosSolidApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(SfPrincipiosSolidApplication.class, args);
 		HealthInsuranceController healthInsuranceController = (HealthInsuranceController) ctx.getBean("healthInsuranceController");
-		System.out.println(" Antes de aplicar o princípio S.O.L.I.D. (Open/Close)");
+		System.out.println("Após aplicar o princípio S.O.L.I.D. (Open/Close)");
 		healthInsuranceController.approvalManager();
 		healthInsuranceController.approvalManagerVheicle();
 	}
