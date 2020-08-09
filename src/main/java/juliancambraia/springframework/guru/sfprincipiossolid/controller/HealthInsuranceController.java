@@ -11,10 +11,10 @@ public class HealthInsuranceController {
     ClaimApprovalManager claimApprovalManager = new ClaimApprovalManager();
 
     public void approvalManager() {
-        claimApprovalManager.processHealthClaim(new HealthInsuranceSurveyor());
+        claimApprovalManager.processClaim(new HealthInsuranceSurveyor());
     }
 
     public void approvalManagerVheicle() {
-        claimApprovalManager.processVheicleClaim(new VehicleInsuranceSurveyor());
+        claimApprovalManager.processClaim(new VehicleInsuranceSurveyor());
     }
 }
