@@ -19,9 +19,8 @@ public class ToyHouseImpl implements ToyService {
 
     @Override
     public String toString() {
-        return "ToyHouseImpl{" +
-                "price=" + price +
-                ", color='" + color + '\'' +
-                '}';
+        return "ToyHouseImpl: Toy House - " +
+                "Price = " + price +
+                ", Color = " + color ;
     }
 }

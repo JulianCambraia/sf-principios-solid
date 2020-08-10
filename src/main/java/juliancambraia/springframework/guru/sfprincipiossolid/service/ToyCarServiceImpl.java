@@ -1,5 +1,8 @@
 package juliancambraia.springframework.guru.sfprincipiossolid.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class ToyCarServiceImpl implements ToyService, MovableService {
     private double price;
     private String color;
@@ -21,9 +24,8 @@ public class ToyCarServiceImpl implements ToyService, MovableService {
 
     @Override
     public String toString() {
-        return "ToyCarServiceImpl{" +
-                "price=" + price +
-                ", color='" + color + '\'' +
-                '}';
+        return "ToyCarServiceImpl: ToyCar: " +
+                "Price = " + price +
+                ", Color = " + color;
     }
 }
